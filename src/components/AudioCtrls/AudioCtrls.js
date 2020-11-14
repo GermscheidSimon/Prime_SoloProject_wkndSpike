@@ -43,7 +43,14 @@ class AudioCtrls extends Component {
         this.state.audio.current.load()
         this.handlePlay()
     }
-   
+    playRemoteSong = () => {
+        this.setState({
+            song: 'http://localhost:5000/theophany-02TheClockworksflac.flac'
+        })
+        this.handlePause()
+        this.state.audio.current.load()
+        this.handlePlay()
+    }
    
     render(){
 
@@ -59,7 +66,7 @@ class AudioCtrls extends Component {
                             <li> element.pause()</li>
                         <li><button onClick={this.setCurrentTime}>Get current position in song</button></li>
                             <li>{this.state.info} setting state === element.currentTime</li>
-                        <li><button onClick={this.playNext}>Next track</button></li>
+                        <li><button onClick={this.playNext}>Next track</button><button onClick={this.playRemoteSong}>play remote</button></li>
                             <li>audio src = this.state song. set state to new song, then pause, load, play</li>
                     </ul>
                 <audio ref={this.state.audio}>

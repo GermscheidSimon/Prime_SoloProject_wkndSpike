@@ -1,7 +1,7 @@
 ## Weekend SoloProject spike
-     - the intent of this repo is to create a 
-     proof of concept for my Solo Project at 
-     Prime Digital Academy
+     - the intent of this repo is to create a   
+     proof of concept for my Solo Project at   
+     Prime Digital Academy  
 ### Work completed for spike
     * playback audio with basic controls using React/HTML5 features
         > switching between tracks
@@ -16,21 +16,20 @@
         > .mv() move files into directory
 
 ### what does it do?
-    - this app allows for simple control of a 2 song track list. 
-    (play, pause, next track, current position in track).
-     I also allows a user to upload an audio file (FLAC or mpeg-3 only)
-      to a given server folder. 
+    - this app allows for simple control of a 2 song track list.   
+    (play, pause, next track, current position in track).  
+     I also allows a user to upload an audio file (FLAC or mpeg-3 only)  
+      to a given server folder.   
 
 ### Summary 
-    -This was SUPER fun to put together, but it was quite a lot of work.
-    There's so much information out there about how to use <audio> tags
-    express-fileupload, and the like, but none of it really was easily laid
-     out to copy into my project here. I learned quite a lot in a short
-      period of time about how data cane be streamed, JSON headers for axios 
-      requests, and a short and ineffective lesson on CORS...
+    -This was SUPER fun to put together, but it was quite a lot of work.  
+    There's so much information out there about how to use <audio> tags  
+    express-fileupload, and the like, but none of it really was easily laid  
+     out to copy into my project here. I learned quite a lot in a short  
+      period of time about how data cane be streamed, JSON headers for axios   requests, and a short and ineffective lesson on CORS...  
 
-    Overall I'm quite pleased with how this will set me up for my work over
-    the coming weeks to create a full featured music player, and streaming
+    Overall I'm quite pleased with how this will set me up for my work over  
+    the coming weeks to create a full featured music player, and streaming  
      service.
 
 ## built With

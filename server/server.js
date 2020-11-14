@@ -9,8 +9,8 @@ const cors = require('cors')
 
 app.use(cors())
 
-app.use(bodyParser.json()); // needed for axios requests
 app.use(express.static('build'));
+app.use(express.static('./public/uploadDestination'))
 
 app.use('/song', songRouter);
 
