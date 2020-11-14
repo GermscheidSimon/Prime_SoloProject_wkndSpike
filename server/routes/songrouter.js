@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const fileUpload = require('express-fileupload')
+const jsmediatags = require('jsmediatags')
+const fs = require('fs')
 
 const songdata = [];
 
@@ -8,6 +10,7 @@ router.post('/upload', fileUpload({ safeFileNames: true }), (req, res) => {
 
        console.log(req.files.file);
        let filetype;
+
        if (req.files.file.mimetype === 'audio/mpeg') {
             filetype = 'mp3'
        } else if (req.files.file.mimetype === 'audio/flac') {
@@ -27,6 +30,17 @@ router.post('/upload', fileUpload({ safeFileNames: true }), (req, res) => {
             songdata.push(songDir)
             res.send(songdata)
         }
+
+        let songRead = fs.createReadStream(songDir)
+        
+        jsmediatags.read(songDir, {
+            onSuccess: function(tag) {
+            console.log(tag);
+            },
+            onError: function(error) {
+            console.log(':(', error.type, error.info);
+            }
+        })
     })
 })
 
