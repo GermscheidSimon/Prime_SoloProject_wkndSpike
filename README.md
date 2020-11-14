@@ -17,7 +17,7 @@
     * read media tags (jsmediatags)
         > read song information like artist, song name, album, and album cover data
         > can be used to create more robust database instead of relying on user input
-        > ![logfile](images/serverLog.png)
+![logfile](images/serverLog.png)
 
 ### what does it do?
     - this app allows for simple control of a 2 song track list.   
@@ -26,7 +26,7 @@
       to a given server folder.   
     - This acts as a proof of concept for how many of the features I will need for my   player will operate.
 
-    ![DOM](images/DOM.png)
+![DOMpicure](images/DOM.png)
 
 
 ### Summary 
