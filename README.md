@@ -14,12 +14,20 @@
     * receive upload using express-fileupload
         > req.files
         > .mv() move files into directory
+    * read media tags (jsmediatags)
+        > read song information like artist, song name, album, and album cover data
+        > can be used to create more robust database instead of relying on user input
+        > ![logfile](images/serverLog.png)
 
 ### what does it do?
     - this app allows for simple control of a 2 song track list.   
     (play, pause, next track, current position in track).  
      I also allows a user to upload an audio file (FLAC or mpeg-3 only)  
       to a given server folder.   
+    - This acts as a proof of concept for how many of the features I will need for my   player will operate.
+
+    ![DOM](images/DOM.png)
+
 
 ### Summary 
     -This was SUPER fun to put together, but it was quite a lot of work.  
